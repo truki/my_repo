@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('First stage') {
       parallel {
-        stage('error') {
+        stage('First stage - 1') {
           steps {
             echo 'Testing'
             sh 'echo "Hello BB"'
